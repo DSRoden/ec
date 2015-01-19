@@ -1,0 +1,222 @@
+@import url(http://fonts.googleapis.com/css?family=Maven+Pro:400,500);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
+@import url(http://fonts.googleapis.com/css?family=Exo+2:400,900);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:900);
+
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #1fc7cf !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #2facc2 !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+.ion-person {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.endorsee-background-color {
+  background: $balanced;
+}
+
+.endorsee-header {
+  background: $positive;
+  height: 50px;
+}
+
+.bar {
+  border-bottom: 0px;
+}
+
+.menu-header {
+  background: $balanced;
+  height: 50px;
+}
+
+.menu-header h1 {
+font-family: 'Titillium Web', sans-serif;
+color: white;
+text-align: center;
+}
+
+.menu-content {
+  box-shadow: none ! important;
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+}
+
+.menu-background {
+  background: $positive;
+}
+
+.menu-background .item-content {
+  background: $positive !important;
+  border-bottom: 0px !important;
+}
+
+
+//menu items
+.item-content:active {
+  background: $balanced !important;
+  border-bottom: 0px !important;
+}
+
+.item-complex {
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+  border-bottom: 0px;
+  border-top: 0px;
+}
+
+.item-complex:active {
+  border-bottom: 0px;
+  border-top: 0px;
+  background: $energized;
+}
+
+.item-content {
+  padding: 30px ! important;
+}
+
+//content backgroujnd
+.endorsee-content-background {
+  background: $balanced;
+}
+
+
+//login
+.login {
+  margin-top: 40px;
+}
+
+//register
+.register {
+  margin-top: 40px;
+}
+
+
+//sign-in-greeting
+.sign-in-greeting {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+//sign in inputs
+.endorsee-input {
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50px ! important;
+  border-radius: 5px;
+  text-align: center;
+}
+
+//sign in button
+
+.signin-button {
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid white;
+  width: 100px;
+  text-align: center;
+  height: 40px;
+  line-height: 35px;
+  border-radius: 5px;
+  background: $balanced;
+}
+
+.signin-button:active {
+  background: $positive;
+}
+
+//or register
+.or-register {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+//show register button
+.show-register-button {
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid white;
+  width: 100px;
+  text-align: center;
+  height: 40px;
+  line-height: 35px;
+  border-radius: 5px;
+  background: $balanced;
+}
+
+.show-register-button:active {
+  background: $positive;
+}
+
+//forgot password link
+
+.forgot-password-link {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.forgot-password-link:active {
+  text-decoration: underline;
+}
+
+//forgot section
+.forgot {
+  margin-top: 40%;
+}
+
+.forgot-password-greeting {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+//back link
+.back-link {
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-link:active {
+  text-decoration: underline;
+}

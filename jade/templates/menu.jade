@@ -1,0 +1,27 @@
+html
+  body.endorsee-background-color
+    ion-side-menus(enable-menu-with-back-views='false')
+      ion-side-menu-content
+        ion-nav-bar.endorsee-header
+          ion-nav-back-button
+          ion-nav-buttons(side='left')
+            button.button.button-icon.button-clear.ion-navicon(ng-show="signedIn", menu-toggle='left')
+          ion-nav-buttons(side='right')
+            button.button.button-icon.button-clear.ion-navicon(ng-show="signedIn", ng-click='login()')
+        ion-nav-view(name='menuContent')
+      ion-side-menu(side='left')
+        ion-header-bar.menu-header
+          h1.title Menu
+        ion-content.menu-background
+          ion-list
+            //- ion-item.menu-item-endorsee(nav-clear='', menu-close='', ng-click='login()')
+            //-   | Login
+            ion-item(nav-clear='', menu-close='', href='#/endorsee/profile')
+              | Profile
+              span.ion-person
+            ion-item(nav-clear='', menu-close='', href='#/endorsee/search')
+              | Search
+            ion-item(nav-clear='', menu-close='', href='#/endorsee/browse')
+              | Browse
+            ion-item(nav-clear='', menu-close='', href='#/endorsee/playlists')
+              | Playlists

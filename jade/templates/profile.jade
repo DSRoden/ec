@@ -1,0 +1,25 @@
+html
+  body
+    ion-view(view-title='{{title}}')
+      ion-content.endorsee-content-background
+        .login(ng-show="login")
+            h1.sign-in-greeting Welcome Back!
+            input.endorsee-input(type='text', placeholder="Email", ng-model='user.email')
+            input.endorsee-input(type='password', placeholder="Password", ng-model='user.password')
+            .signin-button(ng-click='signin(user)') Login
+            h1.or-register New to Endorsee?
+            .show-register-button(ng-click="registrationForm()") Endorse Me
+        .register(ng-show="register")
+            h1.sign-in-greeting Welome to Endorsee!
+            input.endorsee-input(type='text', placeholder="Your name please", ng-model='user.username')
+            input.endorsee-input(type='password', placeholder="Password", ng-model='user.password')
+            .signin-button(ng-click='register(user)') Register
+            h1.or-register or
+            .signin-button(ng-click="loginForm()") Login
+        .forgot(ng-show="forgotPassword")
+          h1.forgot-password-greeting We'll send you an email
+          input.endorsee-input(type='text', placeholder="Your email please", ng-model='user.email')  
+          h5.back-link(ng-click="back()") Back to Login
+        .forgot-password
+          h5.forgot-password-link(ng-show="login || register", ng-click="forgotPasswordForm()") Forgot Your Password?
+        

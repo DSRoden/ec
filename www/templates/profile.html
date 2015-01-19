@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <ion-view view-title="{{title}}">
+      <ion-content class="endorsee-content-background">
+        <div ng-show="login" class="login">
+          <h1 class="sign-in-greeting">Welcome Back!</h1>
+          <input type="text" placeholder="Email" ng-model="user.email" class="endorsee-input">
+          <input type="password" placeholder="Password" ng-model="user.password" class="endorsee-input">
+          <div ng-click="signin(user)" class="signin-button">Login</div>
+          <h1 class="or-register">New to Endorsee?</h1>
+          <div ng-click="registrationForm()" class="show-register-button">Endorse Me</div>
+        </div>
+        <div ng-show="register" class="register">
+          <h1 class="sign-in-greeting">Welome to Endorsee!</h1>
+          <input type="text" placeholder="Your name please" ng-model="user.username" class="endorsee-input">
+          <input type="password" placeholder="Password" ng-model="user.password" class="endorsee-input">
+          <div ng-click="register(user)" class="signin-button">Register</div>
+          <h1 class="or-register">or</h1>
+          <div ng-click="loginForm()" class="signin-button">Login</div>
+        </div>
+        <div ng-show="forgotPassword" class="forgot">
+          <h1 class="forgot-password-greeting">We'll send you an email</h1>
+          <input type="text" placeholder="Your email please" ng-model="user.email" class="endorsee-input">
+          <h5 ng-click="back()" class="back-link">Back to Login</h5>
+        </div>
+        <div class="forgot-password">
+          <h5 ng-show="login || register" ng-click="forgotPasswordForm()" class="forgot-password-link">Forgot Your Password?</h5>
+        </div>
+      </ion-content>
+    </ion-view>
+  </body>
+</html>
